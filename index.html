@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Juego de las parejas</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+    <body>
+        <header class="cabecera">
+            <div>
+                <select name="difficulty" id="selDifficulty" onchange="newGame()">
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                    <option value="expert">Expert</option>
+                </select>
+                <button id="btnNewGame" onclick="newGame()">New Game</button>
+            </div>
+            <div id="divTime">
+                <img id="imgTime" src="https://cdn-icons-png.flaticon.com/512/992/992700.png" alt="time" width="20px">
+                <b id="txtTime">—</b>
+                &emsp; &emsp;
+                <img id="imgBest" src="https://img.icons8.com/ios/256/crown.png" alt="best" width="30px">
+                <b id="txtBest">—</b>
+            </div>
+        </header>
+
+        <table>
+            <tbody id="tableCards"></tbody>
+        </table>
+    </body>         
+    
+    <script src="index.js"></script>
+
+</html>

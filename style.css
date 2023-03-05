@@ -1,0 +1,59 @@
+#tableCards
+{
+    position: relative;
+    top: 10px;
+}
+
+.divFront
+{
+    backface-visibility: hidden;
+    transition: rotate 1s;
+}
+
+.divBack
+{
+    backface-visibility: hidden;
+    transition: scale 0.2s, rotate 1s;
+}
+
+.divBack:hover
+{
+    scale: 0.95;
+}
+
+.divBack
+{
+    position: relative;
+    rotate: y 180deg;
+    top: -173px;
+    margin-bottom: -173px;
+}
+
+.zoomOut
+{
+    scale: 0;
+    transition: scale 1s;
+}
+
+.divCard
+{
+    transform-style: preserve-3d;
+}
+
+#imgTime
+{
+    position: relative;
+    top: 5px;
+}
+
+#imgBest
+{
+    position: relative;
+    top: 8px;
+}
+
+#divTime b
+{
+    font-size: 120%;
+}
+
